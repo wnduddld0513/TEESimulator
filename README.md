@@ -1,3 +1,5 @@
+> **Branch `seventeen`:** the ROM port of TEESimulator (no root) is described in [`rom/NOTICE.md`](rom/NOTICE.md).
+
 # TEESimulator
 
 *TEESimulator* defeats hardware-backed [Key Attestation](https://developer.android.com/privacy-and-security/security-key-attestation) by serving selected apps from a software KeyMint that runs *inside* the real keystore daemon, while every other key stays on the device's real hardware.
