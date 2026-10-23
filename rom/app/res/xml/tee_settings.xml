@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Play Integrity Fix (inject-s) - ROM integration
+     Copyright (C) 2026 wnduddld0513
+     SPDX-License-Identifier: GPL-3.0-only
+
+     The TEESimulator page: keybox, target apps and security patch of the keybox
+     attestation service.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/tee_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="tee_enabled"
+        android:title="@string/tee_main_switch"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:key="tee_keybox"
+        android:title="@string/keybox_category">
+
+        <Preference
+            android:key="keybox_status"
+            android:title="@string/keybox_status_title"
+            android:selectable="false" />
+
+        <Preference
+            android:key="keybox_import"
+            android:title="@string/keybox_import_title"
+            android:summary="@string/keybox_import_summary" />
+
+        <Preference
+            android:key="keybox_fetch"
+            android:title="@string/keybox_fetch_title"
+            android:summary="@string/keybox_fetch_summary" />
+
+        <Preference
+            android:key="keybox_clear"
+            android:title="@string/keybox_clear_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="tee_targets"
+        android:title="@string/targets_category">
+
+        <Preference
+            android:key="target_add"
+            android:title="@string/target_add_title"
+            android:order="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="tee_patch"
+        android:title="@string/patch_category">
+
+        <Preference
+            android:key="patch_value"
+            android:title="@string/patch_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
