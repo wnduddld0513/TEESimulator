@@ -7,7 +7,7 @@ Date:   Fri Oct 23 05:27:40 2026 +0900
     Move the keybox out of Settings.Secure, where every app could read the private
     key, into KeyboxAttestationService (keybox_attestation). The keystore hook only
     asks it to sign for the target apps. Add the TEESimulator switch
-    (lenovo_tee_simulator), report the vbmeta digest of the boot as the boot hash
+    (tee_simulator), report the vbmeta digest of the boot as the boot hash
     of the attestation instead of a random one and keep the old developer-options
     keybox as a one-time migration source.
     

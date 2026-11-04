@@ -16,7 +16,7 @@ described in [`rom/NOTICE.md`](rom/NOTICE.md).
   boot key derived from it.
 - *Settings > Advanced features > Experimental features > Integrity > TEESimulator* manages the
   keybox, the target apps and the security patch; the main switch is
-  `Settings.Global lenovo_tee_simulator` (on unless 0). No keybox is shipped with the ROM.
+  `Settings.Global tee_simulator` (on unless 0). No keybox is shipped with the ROM.
 
 ## Requirements on the ROM
 

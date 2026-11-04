@@ -14,7 +14,7 @@ there is no root, no module and no injector. The framework files keep their Apac
 | `rom/patches/SystemServer.patch`, `rom/patches/sepolicy.patch` | starts the service, and its SELinux type and context |
 | `rom/app/**` | the TEESimulator settings page (keybox, target apps, security patch, revocation check) of the Play Integrity Fix app of the ROM; `KeyboxStore.java` is shared with the Specter page |
 
-Settings key: `Settings.Global lenovo_tee_simulator` (on unless 0). No keybox is shipped; it comes from
+Settings key: `Settings.Global tee_simulator` (on unless 0). No keybox is shipped; it comes from
 the user or from the online catalog of the Specter page.
 
 The files are from the ROM sources: `frameworks/base` and `device/lenovo/lapis` of
